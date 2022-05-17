@@ -3,11 +3,11 @@
     <color name="colorPrimary">#424242</color>
     <color name="colorPrimaryDark">#1B1B1B</color>
     <color name="colorAccent">#f44336</color>
-    <color name="strongAccent">#ba000d</color>
-    <color name="alphaAccent">#ddf44336</color>
 
     <color name="black">#000000</color>
-    <color name="gray">#b6b6b6</color>
+    <color name="dark_gray">#aeaeae</color>
+    <color name="medium_gray">#eeeeee</color>
+    <color name="light_gray">#f5f5f5</color>
     <color name="white">#ffffff</color>
     <color name="none">#0000</color>
 </resources>

@@ -5,36 +5,48 @@
     android:id="@+id/parentView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/padding16"
+    android:background="@color/light_gray"
     tools:context=".ui.main.fragments.TrendingFragment">
 
-    <EditText
-        android:id="@+id/searchInput"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="4dp"
-        android:ems="10"
-        android:imeOptions="actionSearch|flagNoFullscreen"
-        android:hint="Search GIPHY"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/searchBtn"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/circled_button_size"
+        android:layout_marginTop="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/rounded_white_background">
 
-    <Button
-        android:id="@+id/searchBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search"
-        app:layout_constraintBottom_toBottomOf="@+id/searchInput"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="10"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch|flagNoFullscreen"
+            android:inputType="textPersonName"
+            style="@style/AlphaEdittext"/>
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="@dimen/circled_button_size"
+            android:layout_height="@dimen/circled_button_size"
+            android:src="@drawable/ic_search"
+            style="@style/RoundedButton"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.giphy.sdk.ui.views.GiphyGridView
         android:id="@+id/gifsGridView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchInput" />
+        android:padding="@dimen/padding16"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

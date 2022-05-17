@@ -3,12 +3,9 @@
     <string name="tab_text_1">Trending</string>
     <string name="tab_text_2">Favorite</string>
 
-    <!-- LOGIN -->
+    <!-- TRENDING -->
 
-    <string name="slogan">All GIFs in one place</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="login">Log in</string>
+    <string name="hint_search">Search for a GIF about...</string>
 
     <!-- MESSAGES TO USER -->
 

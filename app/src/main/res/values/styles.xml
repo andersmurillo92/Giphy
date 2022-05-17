@@ -11,7 +11,6 @@
 
     <!-- TextViews -->
 
-
     <style name="Label">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -24,53 +23,25 @@
     <style name="AlphaEdittext">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">@dimen/padding16</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/padding16</item>
+        <item name="android:paddingEnd">@dimen/padding72</item>
         <item name="android:textSize">@dimen/font16</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textColorHint">@color/gray</item>
-        <item name="android:textCursorDrawable">@drawable/custom_cursor</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textCursorDrawable">@drawable/dark_cursor</item>
         <item name="android:background">@color/none</item>
     </style>
 
-
-    <!-- TextInputLayouts -->
-
-    <style name="OutlinedTextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="boxStrokeColor">@color/white</item>
-        <item name="hintTextAppearance">@style/HintText</item>
-        <item name="errorTextAppearance">@style/ErrorText</item>
-        <item name="boxBackgroundColor">@color/colorPrimary</item>
-        <item name="boxCornerRadiusTopStart">50dp</item>
-        <item name="boxCornerRadiusTopEnd">50dp</item>
-        <item name="boxCornerRadiusBottomEnd">50dp</item>
-        <item name="boxCornerRadiusBottomStart">50dp</item>
-    </style>
-
-    <style name="ErrorText" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">@color/colorAccent</item>
-        <item name="android:textSize">14sp</item>
-    </style>
-
-    <style name="HintText" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">14sp</item>
-    </style>
-
-
     <!-- Buttons -->
 
-    <style name="LoginButton">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="RoundedButton">
+        <item name="android:layout_width">@dimen/circled_button_size</item>
+        <item name="android:layout_height">@dimen/circled_button_size</item>
         <item name="android:textSize">@dimen/font12</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:padding">@dimen/padding16</item>
-        <item name="android:layout_gravity">right</item>
-        <item name="android:layout_marginTop">@dimen/margin32</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:background">@drawable/button_main_selector</item>
+        <item name="android:background">@drawable/button_circled</item>
     </style>
 
 </resources>
