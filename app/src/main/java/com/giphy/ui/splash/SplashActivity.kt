@@ -3,15 +3,15 @@ package com.giphy.ui.splash
 import android.app.Activity
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.WindowManager
 import android.view.animation.AccelerateInterpolator
+import androidx.appcompat.app.AppCompatActivity
 import com.giphy.R
-import com.giphy.ui.login.LoginActivity
+import com.giphy.ui.main.MainActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
@@ -54,7 +54,7 @@ class SplashActivity : AppCompatActivity() {
 
         val mHandler1 = Handler()
         mHandler1.postDelayed({
-            goToActivity(LoginActivity::class.java)
+            goToActivity(MainActivity::class.java)
             finish()
         }, 1750)
     }
