@@ -5,4 +5,19 @@
     <dimen name="appbar_padding">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="circled_button_size">48dp</dimen>
+
+    <dimen name="font18">18sp</dimen>
+    <dimen name="font16">16sp</dimen>
+    <dimen name="font12">12sp</dimen>
+
+    <dimen name="margin32">32dp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin8">8dp</dimen>
+
+    <dimen name="padding72">72dp</dimen>
+    <dimen name="padding32">32dp</dimen>
+    <dimen name="padding16">16dp</dimen>
+    <dimen name="padding8">8dp</dimen>
 </resources>

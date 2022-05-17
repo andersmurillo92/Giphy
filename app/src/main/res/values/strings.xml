@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">Giphy</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_1">Trending</string>
+    <string name="tab_text_2">Favorite</string>
+
+    <!-- TRENDING -->
+
+    <string name="hint_search">Search for a GIF about...</string>
+
+    <!-- MESSAGES TO USER -->
+
+    <string name="message_please_wait">Please, wait&#8230;</string>
+    <string name="message_title_login">Logging in</string>
+    <string name="message_not_connected">Maybe, you don\'t have network access. Please, check your Wifi connection or mobile network access</string>
+
+    <!-- ERROR MESSAGES -->
+
+    <string name="error_empty_field">This field must not be empty</string>
+    <string name="error_wrong_email">Please, type a valid email</string>
 </resources>
